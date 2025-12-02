@@ -1157,7 +1157,34 @@
         // Form submission
         function handleSubmit(event) {
             event.preventDefault();
-            alert('Thank you for your interest! We will contact you shortly with your free quote. (Note: In a production site, this form would send your information to the agency.)');
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const insuranceType = formData.get('insurance-type');
+            const message = formData.get('message');
+            
+            // Create email body
+            const emailBody = `New Quote Request from Cloud Insurance Website
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Insurance Type: ${insuranceType}
+Additional Information: ${message}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:cfoskey@thecloudins.com?subject=New Quote Request from ${encodeURIComponent(name)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your interest! We will contact you shortly with your free quote.');
+            
+            // Reset form
             event.target.reset();
         }
 
