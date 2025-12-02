@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cloud Insurance Agency Services - Home Insurance, Auto Insurance, and Additional Coverage options in New Jersey.">
+    <title>Our Services | Cloud Insurance Agency</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #0A7DC2;
+            --dark-blue: #085A8D;
+            --light-blue: #E8F5FC;
+            --accent-yellow: #FFC107;
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+            --gray-dark: #333333;
+            --text-dark: #2C3E50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .logo-tagline {
+            font-size: 0.9rem;
+            color: var(--accent-yellow);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-yellow);
+        }
+        
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .page-hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Services Hub Section */
+        .services-hub {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .services-intro {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .services-intro h3 {
+            font-size: 2rem;
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+        }
+        
+        .services-intro p {
+            font-size: 1.1rem;
+            color: var(--gray-dark);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .service-hub-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-hub-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .service-hub-header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .service-hub-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-hub-header h4 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-hub-header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .service-hub-body {
+            padding: 2.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-hub-body p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .service-features li {
+            padding: 0.7rem 0;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1rem;
+        }
+        
+        .service-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .service-hub-footer {
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(10, 125, 194, 0.4);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn-secondary {
+            background-color: var(--accent-yellow);
+            color: var(--dark-blue);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #FFD54F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-yellow);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            .page-hero h2 {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div>
+                    <h1>Cloud Insurance Agency</h1>
+                    <div class="logo-tagline">Your Independent Insurance Partner</div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#why-us">Why Choose Us</a></li>
+                <li><a href="index.html#carriers">Our Carriers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h2>Our Insurance Services</h2>
+            <p>Comprehensive coverage options tailored to protect what matters most to you and your family.</p>
+        </section>
+
+        <section class="services-hub">
+            <div class="services-intro">
+                <h3>Protecting What Matters Most</h3>
+                <p>As an independent insurance agency, we offer a wide range of insurance products from multiple top-rated carriers. This allows us to find the perfect coverage at the best price for your unique needs.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Home Insurance Card -->
+                <div class="service-hub-card" id="home-insurance">
+                    <div class="service-hub-header">
+                        <div class="service-hub-icon">🏠</div>
+                        <h4>Home Insurance</h4>
+                        <p>Protect Your Most Valuable Asset</p>
+                    </div>
+                    <div class="service-hub-body">
+                        <p>Your home is likely your largest investment. We'll help you find comprehensive coverage that protects your property, belongings, and financial future.</p>
+                        
+                        <ul class="service-features">
+                            <li>Homeowners Insurance</li>
+                            <li>Condo & Co-op Insurance</li>
+                            <li>Renters Insurance</li>
+                            <li>Landlord & Rental Property Coverage</li>
+                            <li>Flood Insurance</li>
+                            <li>Earthquake Coverage</li>
+                        </ul>
+                        
+                        <div class="service-hub-footer">
+                            <a href="home-insurance.html" class="btn btn-primary">Learn More About Home Insurance →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auto Insurance Card -->
+                <div class="service-hub-card" id="auto-insurance">
+                    <div class="service-hub-header">
+                        <div class="service-hub-icon">🚗</div>
+                        <h4>Auto Insurance</h4>
+                        <p>Drive with Confidence</p>
+                    </div>
+                    <div class="service-hub-body">
+                        <p>Get the coverage you need to protect yourself, your passengers, and your vehicle. We offer competitive rates and excellent service from trusted carriers.</p>
+                        
+                        <ul class="service-features">
+                            <li>Personal Auto Insurance</li>
+                            <li>Multi-Car & Bundle Discounts</li>
+                            <li>Teen Driver Coverage</li>
+                            <li>Classic & Collector Car Insurance</li>
+                            <li>Commercial Auto Insurance</li>
+                            <li>SR-22 & High-Risk Insurance</li>
+                        </ul>
+                        
+                        <div class="service-hub-footer">
+                            <a href="auto-insurance.html" class="btn btn-primary">Learn More About Auto Insurance →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Coverage Card -->
+                <div class="service-hub-card" id="additional-coverage">
+                    <div class="service-hub-header">
+                        <div class="service-hub-icon">⭐</div>
+                        <h4>Additional Coverage</h4>
+                        <p>Extra Protection for Peace of Mind</p>
+                    </div>
+                    <div class="service-hub-body">
+                        <p>Beyond home and auto insurance, we offer additional coverage options to protect you from life's unexpected events and provide comprehensive financial security.</p>
+                        
+                        <ul class="service-features">
+                            <li>Umbrella Liability Insurance</li>
+                            <li>Life Insurance</li>
+                            <li>Valuable Items & Jewelry Coverage</li>
+                            <li>Identity Theft Protection</li>
+                            <li>Pet Insurance</li>
+                            <li>Recreational Vehicle Insurance</li>
+                        </ul>
+                        
+                        <div class="service-hub-footer">
+                            <a href="additional-coverage.html" class="btn btn-primary">Learn More About Additional Coverage →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h3>Ready to Get Started?</h3>
+            <p>Get a free, no-obligation quote today and discover how much you can save with Cloud Insurance Agency.</p>
+            <a href="index.html#contact" class="btn btn-secondary" style="max-width: 300px; margin: 0 auto;">Get Your Free Quote</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#why-us">Why Choose Us</a>
+                <a href="index.html#carriers">Our Carriers</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2025 Cloud Insurance Agency. All rights reserved. Licensed in New Jersey.</p>
+            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">
+                Cloud Insurance Agency is an independent insurance agency offering home and auto insurance in New Jersey.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
