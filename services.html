@@ -163,7 +163,10 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            min-height: 200px;
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .service-hub-header-bg {
@@ -181,8 +184,20 @@
             position: relative;
             z-index: 1;
             background: rgba(10, 125, 194, 0.85);
-            padding: 2rem;
+            padding: 1rem 1.5rem;
             border-radius: 10px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        
+        .service-hub-header h4 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-hub-header p {
+            font-size: 1rem;
+            opacity: 0.9;
         }
         
         .service-hub-header h4 {
