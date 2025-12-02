@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Additional Insurance Coverage from Cloud Insurance Agency - Umbrella, Life, Valuable Items, and more in New Jersey.">
+    <title>Additional Coverage | Cloud Insurance Agency</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #0A7DC2;
+            --dark-blue: #085A8D;
+            --light-blue: #E8F5FC;
+            --accent-yellow: #FFC107;
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+            --gray-dark: #333333;
+            --text-dark: #2C3E50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .logo-tagline {
+            font-size: 0.9rem;
+            color: var(--accent-yellow);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-yellow);
+        }
+        
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .page-hero-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .page-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+        
+        .intro-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .intro-text p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--dark-blue);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+        
+        .coverage-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .coverage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .coverage-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        
+        .coverage-card p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .coverage-card ul {
+            list-style: none;
+        }
+        
+        .coverage-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            font-size: 1rem;
+        }
+        
+        .coverage-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .highlight-section {
+            background: var(--light-blue);
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+        }
+        
+        .highlight-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .highlight-section h3 {
+            font-size: 2rem;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .highlight-section p {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+        }
+        
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .feature-item h4 {
+            color: var(--primary-blue);
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .feature-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-yellow);
+            color: var(--dark-blue);
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFD54F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+        }
+        
+        footer {
+            background: var(--dark-blue);
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-yellow);
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            .page-hero h2 {
+                font-size: 2rem;
+            }
+            
+            .coverage-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div>
+                    <h1>Cloud Insurance Agency</h1>
+                    <div class="logo-tagline">Your Independent Insurance Partner</div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#why-us">Why Choose Us</a></li>
+                <li><a href="index.html#carriers">Our Carriers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-icon">⭐</div>
+            <h2>Additional Coverage Options</h2>
+            <p>Extra layers of protection for comprehensive peace of mind</p>
+        </section>
+
+        <section class="content-section">
+            <div class="intro-text">
+                <p>Beyond standard home and auto insurance, additional coverage options provide extra protection for life's unexpected events. From umbrella policies that extend your liability coverage to specialized insurance for valuable items, these products help ensure you and your family are fully protected.</p>
+            </div>
+
+            <h3 class="section-title">Explore Our Additional Coverage Options</h3>
+            
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <h3>Umbrella Insurance</h3>
+                    <p>Extra liability protection beyond your standard policies.</p>
+                    <ul>
+                        <li>$1 million to $5+ million coverage</li>
+                        <li>Extends home & auto liability</li>
+                        <li>Legal defense costs covered</li>
+                        <li>Worldwide coverage</li>
+                        <li>Protects assets & future income</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Life Insurance</h3>
+                    <p>Financial security for your loved ones.</p>
+                    <ul>
+                        <li>Term life insurance</li>
+                        <li>Whole life insurance</li>
+                        <li>Universal life options</li>
+                        <li>Income replacement</li>
+                        <li>Debt & mortgage coverage</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Valuable Items Coverage</h3>
+                    <p>Specialized protection for high-value possessions.</p>
+                    <ul>
+                        <li>Jewelry & watches</li>
+                        <li>Fine art & collectibles</li>
+                        <li>Musical instruments</li>
+                        <li>Cameras & equipment</li>
+                        <li>Agreed value coverage</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Identity Theft Protection</h3>
+                    <p>Safeguard against identity fraud and theft.</p>
+                    <ul>
+                        <li>Credit monitoring services</li>
+                        <li>Identity restoration assistance</li>
+                        <li>Legal expense coverage</li>
+                        <li>Lost wages reimbursement</li>
+                        <li>24/7 fraud support</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Pet Insurance</h3>
+                    <p>Healthcare coverage for your furry family members.</p>
+                    <ul>
+                        <li>Accident & illness coverage</li>
+                        <li>Wellness & preventive care</li>
+                        <li>Prescription medications</li>
+                        <li>Surgery & hospitalization</li>
+                        <li>Hereditary condition coverage</li>
+                    </ul>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Recreational Vehicle Insurance</h3>
+                    <p>Coverage for boats, RVs, and other recreational vehicles.</p>
+                    <ul>
+                        <li>Boat & watercraft insurance</li>
+                        <li>RV & motorhome coverage</li>
+                        <li>Motorcycle insurance</li>
+                        <li>ATV & off-road vehicles</li>
+                        <li>Snowmobile coverage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <div class="highlight-content">
+                <h3>Why You Need Umbrella Insurance</h3>
+                <p>An umbrella policy provides an extra layer of liability protection that goes beyond the limits of your home and auto insurance. It's surprisingly affordable and can protect your assets from major claims.</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h4>Protect Your Assets</h4>
+                        <p>Shields your savings, investments, home equity, and future earnings from lawsuits that exceed your standard policy limits.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Broader Coverage</h4>
+                        <p>Covers liability situations that may not be covered by standard policies, including false arrest, libel, and slander.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Worldwide Protection</h4>
+                        <p>Most umbrella policies provide coverage anywhere in the world, protecting you even when traveling internationally.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Affordable Premiums</h4>
+                        <p>Umbrella coverage is surprisingly affordable, often costing just a few hundred dollars annually for $1 million in coverage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Life Insurance Options</h3>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <h3>Term Life Insurance</h3>
+                    <p>Affordable coverage for a specific period of time, perfect for covering mortgages, income replacement, or protecting your family during working years.</p>
+                    <ul>
+                        <li>10, 20, or 30-year terms</li>
+                        <li>Level premium payments</li>
+                        <li>Renewable options</li>
+                        <li>Convertible to permanent</li>
+                    </ul>
+                </div>
+                <div class="coverage-card">
+                    <h3>Whole Life Insurance</h3>
+                    <p>Permanent coverage that builds cash value over time, providing lifelong protection and a savings component for your family.</p>
+                    <ul>
+                        <li>Lifetime coverage guarantee</li>
+                        <li>Cash value accumulation</li>
+                        <li>Fixed premium payments</li>
+                        <li>Dividend potential</li>
+                    </ul>
+                </div>
+                <div class="coverage-card">
+                    <h3>Universal Life Insurance</h3>
+                    <p>Flexible permanent coverage that allows you to adjust premiums and death benefits as your needs change throughout life.</p>
+                    <ul>
+                        <li>Flexible premium payments</li>
+                        <li>Adjustable death benefit</li>
+                        <li>Cash value growth</li>
+                        <li>Investment options</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <div class="highlight-content">
+                <h3>Protecting Your Valuables</h3>
+                <p>Standard home insurance policies have limits on high-value items like jewelry, art, and collectibles. Scheduled personal property coverage ensures these treasured possessions are fully protected.</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h4>Agreed Value Coverage</h4>
+                        <p>We agree on the value of your items upfront, so there's no dispute about replacement cost in the event of a loss.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>No Deductible</h4>
+                        <p>Most valuable items policies don't have a deductible, meaning you get the full replacement value if something happens.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Broad Coverage</h4>
+                        <p>Protection against accidental loss, mysterious disappearance, and damage - not just theft or fire like standard policies.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Worldwide Protection</h4>
+                        <p>Your valuables are covered anywhere in the world, whether at home or traveling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3 class="section-title">Why Choose Cloud Insurance for Additional Coverage?</h3>
+            <div class="coverage-grid">
+                <div class="coverage-card">
+                    <h3>Comprehensive Solutions</h3>
+                    <p>We help you identify gaps in your current coverage and recommend additional policies that provide complete protection for you and your family.</p>
+                </div>
+                <div class="coverage-card">
+                    <h3>Multiple Carrier Access</h3>
+                    <p>As an independent agency, we compare options from numerous insurance companies to find the best coverage and rates for your needs.</p>
+                </div>
+                <div class="coverage-card">
+                    <h3>Personalized Guidance</h3>
+                    <p>We take the time to understand your unique situation and provide expert advice on which additional coverages make sense for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h3>Get a Quote for Additional Coverage</h3>
+            <p>Interested in adding extra protection? Contact us today to learn more about our additional coverage options and get a free quote.</p>
+            <a href="index.html#contact" class="btn btn-primary">Request Your Free Quote</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#why-us">Why Choose Us</a>
+                <a href="index.html#carriers">Our Carriers</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <p>&copy; 2025 Cloud Insurance Agency. All rights reserved. Licensed in New Jersey.</p>
+        </div>
+    </footer>
+</body>
+</html>
