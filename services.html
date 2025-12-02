@@ -57,6 +57,12 @@
             gap: 1rem;
         }
         
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
         .logo h1 {
             font-size: 1.5rem;
             font-weight: 700;
@@ -155,6 +161,24 @@
             color: var(--white);
             padding: 3rem 2rem;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-hub-header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .service-hub-header-content {
+            position: relative;
+            z-index: 1;
         }
         
         .service-hub-icon {
@@ -327,9 +351,10 @@
     <header>
         <nav>
             <div class="logo">
+                <img src="Cloud_Insurance-Logo2.png" alt="Cloud Insurance Agency Logo" style="height: 70px; margin-right: 1rem;">
                 <div>
-                    <h1>Cloud Insurance Agency</h1>
-                    <div class="logo-tagline">Your Independent Insurance Partner</div>
+                    <h1>CLOUD INSURANCE AGENCY</h1>
+                    <p class="logo-tagline">HOME & AUTO</p>
                 </div>
             </div>
             <ul>
@@ -358,9 +383,12 @@
                 <!-- Home Insurance Card -->
                 <div class="service-hub-card" id="home-insurance">
                     <div class="service-hub-header">
-                        <div class="service-hub-icon">🏠</div>
-                        <h4>Home Insurance</h4>
-                        <p>Protect Your Most Valuable Asset</p>
+                        <img src="homeowners1.jpg" alt="Home Insurance" class="service-hub-header-bg">
+                        <div class="service-hub-header-content">
+                            <div class="service-hub-icon">🏠</div>
+                            <h4>Home Insurance</h4>
+                            <p>Protect Your Most Valuable Asset</p>
+                        </div>
                     </div>
                     <div class="service-hub-body">
                         <p>Your home is likely your largest investment. We'll help you find comprehensive coverage that protects your property, belongings, and financial future.</p>
@@ -383,9 +411,12 @@
                 <!-- Auto Insurance Card -->
                 <div class="service-hub-card" id="auto-insurance">
                     <div class="service-hub-header">
-                        <div class="service-hub-icon">🚗</div>
-                        <h4>Auto Insurance</h4>
-                        <p>Drive with Confidence</p>
+                        <img src="carinsurance1.jpg" alt="Auto Insurance" class="service-hub-header-bg">
+                        <div class="service-hub-header-content">
+                            <div class="service-hub-icon">🚗</div>
+                            <h4>Auto Insurance</h4>
+                            <p>Drive with Confidence</p>
+                        </div>
                     </div>
                     <div class="service-hub-body">
                         <p>Get the coverage you need to protect yourself, your passengers, and your vehicle. We offer competitive rates and excellent service from trusted carriers.</p>
@@ -408,9 +439,12 @@
                 <!-- Additional Coverage Card -->
                 <div class="service-hub-card" id="additional-coverage">
                     <div class="service-hub-header">
-                        <div class="service-hub-icon">⭐</div>
-                        <h4>Additional Coverage</h4>
-                        <p>Extra Protection for Peace of Mind</p>
+                        <img src="add-coverage.jpg" alt="Additional Coverage" class="service-hub-header-bg">
+                        <div class="service-hub-header-content">
+                            <div class="service-hub-icon">⭐</div>
+                            <h4>Additional Coverage</h4>
+                            <p>Extra Protection for Peace of Mind</p>
+                        </div>
                     </div>
                     <div class="service-hub-body">
                         <p>Beyond home and auto insurance, we offer additional coverage options to protect you from life's unexpected events and provide comprehensive financial security.</p>
