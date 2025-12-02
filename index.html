@@ -205,167 +205,99 @@
             background: var(--white);
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
         }
         
         .benefit-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
         
         .benefit-icon {
+            font-size: 3rem;
             margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        
-        .benefit-icon img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
         }
         
         .benefit-card h3 {
             color: var(--dark-blue);
             margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        .benefit-card p {
-            color: var(--gray-dark);
-            line-height: 1.7;
-        }
-        
-        .stat-highlight {
-            color: var(--primary-blue);
-            font-weight: 600;
-        }
-        
-        /* Carriers Section */
-        .carriers-section {
-            background: var(--white);
-            padding: 4rem 2rem;
-        }
-        
-        .carriers-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            font-size: 1.1rem;
-            color: var(--gray-dark);
-        }
-        
-        .carriers-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .carriers-category {
-            margin-bottom: 4rem;
-        }
-        
-        .carriers-category h3 {
-            color: var(--dark-blue);
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            padding-bottom: 1rem;
-            border-bottom: 3px solid var(--accent-yellow);
-        }
-        
-        .carriers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 2rem;
-            align-items: center;
-            justify-items: center;
-        }
-        
-        .carrier-logo {
-            background: var(--white);
-            padding: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            width: 100%;
-            max-width: 200px;
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        
-        .carrier-logo:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(10, 125, 194, 0.2);
-        }
-        
-        .carrier-logo img {
-            max-width: 90%;
-            max-height: 80px;
-            width: auto;
-            height: auto;
-            object-fit: contain;
+            font-size: 1.4rem;
         }
         
         /* Services Section */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
         
         .service-card {
-            background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
-            padding: 2rem;
+            background: var(--white);
             border-radius: 10px;
-            border-left: 5px solid var(--primary-blue);
-            transition: all 0.3s;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         
         .service-card:hover {
-            border-left-color: var(--accent-yellow);
-            transform: translateX(5px);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
         
-        .service-card h3 {
-            color: var(--dark-blue);
+        .service-header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .service-icon {
+            font-size: 3.5rem;
             margin-bottom: 1rem;
-            font-size: 1.4rem;
         }
         
-        .service-card ul {
+        .service-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-body {
+            padding: 2rem;
+        }
+        
+        .service-body ul {
             list-style: none;
-            padding-left: 0;
+            margin-bottom: 1.5rem;
         }
         
-        .service-card li {
+        .service-body li {
             padding: 0.5rem 0;
-            color: var(--gray-dark);
+            padding-left: 1.5rem;
+            position: relative;
         }
         
-        .service-card li:before {
-            content: "✓ ";
+        .service-body li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
             color: var(--primary-blue);
             font-weight: bold;
-            margin-right: 0.5rem;
         }
         
         /* Quiz Section */
         .quiz-section {
-            background: var(--light-blue);
+            background-color: var(--light-blue);
         }
         
         .quiz-container {
             max-width: 700px;
             margin: 0 auto;
             background: var(--white);
-            padding: 2rem;
+            padding: 3rem;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
         .quiz-question {
@@ -378,7 +310,7 @@
         
         .quiz-question h3 {
             color: var(--dark-blue);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             font-size: 1.4rem;
         }
         
@@ -386,93 +318,133 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            margin-bottom: 2rem;
         }
         
         .quiz-option {
-            padding: 1rem;
-            background: var(--gray-light);
-            border: 2px solid transparent;
-            border-radius: 5px;
+            padding: 1.2rem;
+            border: 2px solid var(--gray-medium);
+            border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s;
+            background: var(--white);
         }
         
         .quiz-option:hover {
-            background: var(--light-blue);
             border-color: var(--primary-blue);
+            background: var(--light-blue);
         }
         
         .quiz-option.selected {
-            background: var(--primary-blue);
-            color: var(--white);
-            border-color: var(--dark-blue);
+            border-color: var(--primary-blue);
+            background: var(--light-blue);
         }
         
-        .quiz-progress {
+        .quiz-nav {
             display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 2px solid var(--gray-medium);
+            justify-content: center;
         }
         
-        .quiz-result {
+        #quiz-result {
             display: none;
             text-align: center;
-            padding: 2rem;
         }
         
-        .quiz-result.active {
+        #quiz-result.active {
             display: block;
         }
         
-        .quiz-result h3 {
-            color: var(--primary-blue);
+        #quiz-result h3 {
+            color: var(--dark-blue);
             font-size: 2rem;
             margin-bottom: 1rem;
         }
         
-        .quiz-score {
+        #score {
             font-size: 3rem;
-            color: var(--accent-yellow);
+            color: var(--primary-blue);
             font-weight: bold;
-            margin: 1rem 0;
+            margin: 2rem 0;
         }
         
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-            color: var(--white);
+        #result-message {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
         }
         
-        .contact-content {
+        /* Carriers Section */
+        .carriers {
+            background-color: var(--gray-light);
+        }
+        
+        .carriers-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
             margin-top: 3rem;
         }
         
+        .carrier-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .carrier-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .carrier-logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--dark-blue);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
         .contact-info h3 {
-            color: var(--accent-yellow);
-            margin-bottom: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
         }
         
         .contact-item {
             display: flex;
-            align-items: start;
+            align-items: flex-start;
             gap: 1rem;
             margin-bottom: 1.5rem;
         }
         
         .contact-icon {
             font-size: 1.5rem;
-            color: var(--accent-yellow);
         }
         
         .contact-form {
-            background: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 10px;
+            background: var(--white);
+        }
+        
+        .contact-form h3 {
+            color: var(--dark-blue);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
         }
         
         .form-group {
@@ -482,6 +454,7 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
+            color: var(--text-dark);
             font-weight: 500;
         }
         
@@ -489,21 +462,28 @@
         .form-group textarea {
             width: 100%;
             padding: 0.8rem;
-            border: none;
+            border: 1px solid var(--gray-medium);
             border-radius: 5px;
             font-family: inherit;
+            font-size: 1rem;
         }
         
         .form-group textarea {
-            resize: vertical;
             min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
         }
         
         /* Footer */
         footer {
-            background-color: var(--gray-dark);
+            background: var(--dark-blue);
             color: var(--white);
-            padding: 2rem;
+            padding: 3rem 2rem 2rem;
             text-align: center;
         }
         
@@ -515,9 +495,9 @@
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1rem;
             flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
         
         .footer-links a {
@@ -532,6 +512,17 @@
         
         /* Responsive Design */
         @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
             .hero h2 {
                 font-size: 2rem;
             }
@@ -540,13 +531,12 @@
                 font-size: 1.1rem;
             }
             
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
             .section-title {
                 font-size: 2rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -555,18 +545,16 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="Cloud_Insurance-Logo2.png" alt="Cloud Insurance Agency Logo" style="height: 70px; margin-right: 1rem;">
                 <div>
-                    <h1>CLOUD INSURANCE AGENCY</h1>
-                    <p class="logo-tagline">HOME & AUTO</p>
+                    <h1>Cloud Insurance Agency</h1>
+                    <div class="logo-tagline">Your Independent Insurance Partner</div>
                 </div>
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
                 <li><a href="#carriers">Our Carriers</a></li>
-                <li><a href="#quiz">Insurance Quiz</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -575,11 +563,11 @@
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
-                <h2>Your Trusted Insurance Partner in New Jersey</h2>
-                <p>Independent insurance agency offering personalized home and auto coverage from <strong>30+ top-rated carriers</strong> including Progressive, Chubb, The Hartford, Travelers, and more. Local expertise meets competitive pricing.</p>
+                <h2>Protect What Matters Most with Personalized Insurance Coverage</h2>
+                <p>Independent insurance agency serving New Jersey with personalized home and auto insurance solutions from top-rated carriers.</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get Free Quote</a>
-                    <a href="#why-us" class="btn btn-secondary">Learn More</a>
+                    <a href="services.html" class="btn btn-secondary">View Our Services</a>
                 </div>
             </div>
         </section>
@@ -587,61 +575,38 @@
         <section class="why-choose" id="why-us">
             <div class="container">
                 <h2 class="section-title">Why Choose Cloud Insurance Agency?</h2>
-                <p class="section-subtitle">As an independent insurance agency serving New Jersey, we provide unmatched service with access to 30+ insurance carriers including Chubb, Progressive, The Hartford, Travelers, Nationwide, Liberty Mutual, and many more. See our complete list of <a href="#carriers" style="color: var(--primary-blue); text-decoration: underline;">trusted insurance partners</a>.</p>
+                <p class="section-subtitle">As an independent insurance agency, we work for you, not the insurance companies. We provide personalized service and access to multiple carriers to find you the best coverage at competitive rates.</p>
                 
                 <div class="benefits-grid">
                     <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="IndependentAgentAdvantage.jpg" alt="Independent Agent Advantage" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        </div>
-                        <h3>Independent Agent Advantage</h3>
-                        <p>Unlike captive agents who represent only one company, we work with <span class="stat-highlight">multiple top-rated insurance carriers</span>. Independent agents write <span class="stat-highlight">35.5% of all personal insurance</span> and <span class="stat-highlight">83% of commercial insurance</span> because customers value having real choices and personalized service.</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;"><a href="https://www.jdpower.com/business/press-releases/2018-us-independent-insurance-agent-satisfaction-study" style="color: var(--primary-blue);">Source: J.D. Power Study</a></p>
+                        <div class="benefit-icon">🤝</div>
+                        <h3>Independent Expertise</h3>
+                        <p>Unlike captive agents, we represent multiple carriers, giving you more options and better rates.</p>
                     </div>
-                    
                     <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="SaveTimeAndMoney.jpg" alt="Save Time and Money" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        </div>
-                        <h3>Save Time & Money</h3>
-                        <p>Instead of calling multiple insurance companies yourself, we do the comparison shopping for you at <span class="stat-highlight">no additional cost</span>. Our clients save an average of <span class="stat-highlight">15-30% by comparing multiple carriers</span> through our agency. We find discounts and bundling opportunities that online quotes often miss.</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;"><a href="https://www.comparioninsurance.com/resources/why-use-an-insurance-agent" style="color: var(--primary-blue);">Source: Industry Analysis</a></p>
+                        <div class="benefit-icon">💰</div>
+                        <h3>Competitive Pricing</h3>
+                        <p>We shop multiple carriers to find you the best coverage at the most competitive price.</p>
                     </div>
-                    
                     <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="LocalNewJerseyExpertise.jpg" alt="Local New Jersey Expertise" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        </div>
-                        <h3>Local New Jersey Expertise</h3>
-                        <p>We understand New Jersey's unique insurance requirements, weather risks, and regulatory landscape. <span class="stat-highlight">Local agents understand area-specific risks</span> that national companies overlook, ensuring you have the right coverage for coastal storms, winter weather, and local regulations.</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;"><a href="https://openly.com/the-open-door/articles/why-choose-an-independent-insurance-agent" style="color: var(--primary-blue);">Source: Openly Insurance</a></p>
+                        <div class="benefit-icon">👨‍💼</div>
+                        <h3>Personalized Service</h3>
+                        <p>Local agent who understands New Jersey insurance needs and provides dedicated support.</p>
                     </div>
-                    
                     <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="YourPersonalAdvocate.jpg" alt="Your Personal Advocate" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        </div>
-                        <h3>Your Personal Advocate</h3>
-                        <p>When you need to file a claim, we guide you through every step and advocate on your behalf with the insurance company. Studies show <span class="stat-highlight">agent satisfaction scores have reached all-time highs of 774-781/1000</span>, translating to better service and support for you when it matters most.</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;"><a href="https://www.jdpower.com/business/press-releases/2024-us-independent-agent-satisfaction-study" style="color: var(--primary-blue);">Source: J.D. Power 2024</a></p>
+                        <div class="benefit-icon">📋</div>
+                        <h3>Comprehensive Coverage</h3>
+                        <p>Home, auto, and additional coverage options all managed through one trusted agent.</p>
                     </div>
-                    
                     <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="FlexibleAndAaptable.jpg" alt="Flexible and Adaptable" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        </div>
-                        <h3>Flexible & Adaptable</h3>
-                        <p>Life changes, and so do your insurance needs. We review your coverage regularly and adjust as your life evolves—new home, new car, marriage, or retirement. <span class="stat-highlight">Over 57% of agents proactively shop policies</span> to ensure clients maintain the best coverage and rates.</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;"><a href="https://www.jdpower.com/business/press-releases/2023-us-independent-agent-satisfaction-study" style="color: var(--primary-blue);">Source: J.D. Power 2023</a></p>
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Quick & Easy Process</h3>
+                        <p>Fast quotes and simple application process. We handle all the paperwork.</p>
                     </div>
-                    
                     <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <img src="RealPeopleRealService.jpg" alt="Real People Real Service" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 1rem;">
-                        </div>
-                        <h3>Real People, Real Service</h3>
-                        <p>No automated phone trees or faceless call centers. You'll work with the same dedicated team who knows your name and your coverage. Face-to-face meetings available when you need them. <span class="stat-highlight">Personal relationships lead to better outcomes</span> and peace of mind.</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;"><a href="https://www.hanover.com/resources/tips-individuals-and-businesses/prepare-now-learn-how/why-independent-insurance-agent" style="color: var(--primary-blue);">Source: The Hanover</a></p>
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Claims Advocacy</h3>
+                        <p>We're your advocate during claims, ensuring you get the support you deserve.</p>
                     </div>
                 </div>
             </div>
@@ -650,318 +615,243 @@
         <section class="services" id="services">
             <div class="container">
                 <h2 class="section-title">Our Insurance Services</h2>
-                <p class="section-subtitle">Comprehensive coverage options from multiple carriers, tailored to your unique needs</p>
+                <p class="section-subtitle">Comprehensive insurance solutions tailored to protect your home, vehicles, and more.</p>
                 
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>🏠 Home Insurance</h3>
-                        <ul>
-                            <li>Homeowners Insurance</li>
-                            <li>Renters Insurance</li>
-                            <li>Condo Insurance</li>
-                            <li>Landlord Insurance</li>
-                            <li>Flood Insurance</li>
-                            <li>Umbrella Policies</li>
-                        </ul>
+                        <div class="service-header">
+                            <div class="service-icon">🏠</div>
+                            <h3>Home Insurance</h3>
+                        </div>
+                        <div class="service-body">
+                            <ul>
+                                <li>Homeowners Insurance</li>
+                                <li>Condo Insurance</li>
+                                <li>Renters Insurance</li>
+                                <li>Landlord Insurance</li>
+                                <li>Flood Insurance</li>
+                            </ul>
+                            <a href="services.html#home-insurance" class="btn btn-primary" style="width: 100%;">Learn More</a>
+                        </div>
                     </div>
                     
                     <div class="service-card">
-                        <h3>🚗 Auto Insurance</h3>
-                        <ul>
-                            <li>Personal Auto</li>
-                            <li>Multi-Car Discounts</li>
-                            <li>Teen Driver Coverage</li>
-                            <li>Classic Car Insurance</li>
-                            <li>Motorcycle Insurance</li>
-                            <li>RV & Boat Insurance</li>
-                        </ul>
+                        <div class="service-header">
+                            <div class="service-icon">🚗</div>
+                            <h3>Auto Insurance</h3>
+                        </div>
+                        <div class="service-body">
+                            <ul>
+                                <li>Personal Auto Insurance</li>
+                                <li>Multi-Car Discounts</li>
+                                <li>Teen Driver Coverage</li>
+                                <li>Classic Car Insurance</li>
+                                <li>SR-22 Filing</li>
+                            </ul>
+                            <a href="services.html#auto-insurance" class="btn btn-primary" style="width: 100%;">Learn More</a>
+                        </div>
                     </div>
                     
                     <div class="service-card">
-                        <h3>💼 Additional Coverage</h3>
-                        <ul>
-                            <li>Bundling Discounts</li>
-                            <li>Life Insurance</li>
-                            <li>Personal Articles</li>
-                            <li>Valuable Items</li>
-                            <li>Identity Theft Protection</li>
-                            <li>Policy Reviews</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="carriers-section" id="carriers">
-            <div class="carriers-container">
-                <h2 class="section-title">Our Trusted Insurance Partners</h2>
-                <p class="carriers-intro">
-                    As an independent insurance agency, we partner with leading insurance carriers to bring you the best coverage options. Our relationships with multiple top-rated companies mean we can shop and compare to find you the perfect policy at the right price.
-                </p>
-                
-                <!-- Commercial Lines Carriers -->
-                <div class="carriers-category">
-                    <h3>Commercial Lines Carriers in NJ</h3>
-                    <div class="carriers-grid">
-                        <div class="carrier-logo">
-                            <img src="AmTrust-Image.png" alt="AmTrust Insurance">
+                        <div class="service-header">
+                            <div class="service-icon">⭐</div>
+                            <h3>Additional Coverage</h3>
                         </div>
-                        <div class="carrier-logo">
-                            <img src="Chubb-Image.png" alt="Chubb Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="CNA-Image.png" alt="CNA Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="CoveWhale-Image.png" alt="Cover Whale Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Fairmatic-Image.png" alt="FAIRMATIC Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="BershireHathawayGuard-Image.png" alt="Berkshire Hathaway GUARD Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="GuideOne-Image.png" alt="GuideOne Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="HanoverInsuranceGroup-Image.png" alt="The Hanover Insurance Group">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="TheHartford-Image.png" alt="The Hartford Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="BerkshireHathawayeHomestateCompanies-Image.png" alt="Berkshire Hathaway HOMESTATE COMPANIES">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Honeycomb-Image.png" alt="honeycomb Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Indigo-Image.png" alt="indigo Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="K2SpecialtyInsruance-Image.png" alt="K2 Specialty Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="LibertyMutualnsurance-Image.png" alt="Liberty Mutual Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="LibertyMutalSurety-Image.png" alt="Liberty Mutual Surety">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Nationwide-Image.png" alt="Nationwide Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="PhiladelphiaInsuranceCompanies-Image.png" alt="Philadelphia Insurance Companies">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Progressive-Image.png" alt="Progressive Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Travelers-Image.png" alt="Travelers Insurance">
+                        <div class="service-body">
+                            <ul>
+                                <li>Umbrella Insurance</li>
+                                <li>Life Insurance</li>
+                                <li>Valuable Items Coverage</li>
+                                <li>Identity Theft Protection</li>
+                                <li>Pet Insurance</li>
+                            </ul>
+                            <a href="services.html#additional-coverage" class="btn btn-primary" style="width: 100%;">Learn More</a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Personal Lines Carriers -->
-                <div class="carriers-category">
-                    <h3>Personal Lines Carriers in NJ</h3>
-                    <div class="carriers-grid">
-                        <div class="carrier-logo">
-                            <img src="AnnexRisk-Image.png" alt="Annex Risk Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="BristolWest-Image.png" alt="Bristol West Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Chubb-Image.png" alt="Chubb Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="PremiumEManage-Image.png" alt="Premium eManage Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="KeecoInsurance-Image.png" alt="Keeeco Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Lemonade-Image.png" alt="Lemonade Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Progressive-Image.png" alt="Progressive Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="SafecoInsurance-Image.png" alt="Safeco Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Steadily-Image.png" alt="Steadily Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="StilwaterInsurance-Image.png" alt="Stillwater Insurance">
-                        </div>
-                        <div class="carrier-logo">
-                            <img src="Swyftt-Image.png" alt="Swyfft Insurance">
-                        </div>
-                    </div>
-                </div>
-                
-                <p style="text-align: center; margin-top: 3rem; font-size: 1.1rem; color: var(--gray-dark);">
-                    <strong>And many more!</strong> Our independent status means we're always expanding our carrier partnerships to give you the best options.
-                </p>
             </div>
         </section>
 
         <section class="quiz-section" id="quiz">
             <div class="container">
                 <h2 class="section-title">Test Your Insurance Knowledge</h2>
-                <p class="section-subtitle">Take our quick 5-question quiz to learn important facts about choosing the right insurance coverage</p>
+                <p class="section-subtitle">Take our quick quiz to see how much you know about independent insurance agencies!</p>
                 
                 <div class="quiz-container">
-                    <div id="quiz">
-                        <!-- Question 1 -->
-                        <div class="quiz-question active" data-question="1">
-                            <h3>Question 1 of 5</h3>
-                            <p><strong>What is the main advantage of working with an independent insurance agent versus a captive agent?</strong></p>
-                            <div class="quiz-options">
-                                <div class="quiz-option" data-answer="correct">
-                                    Access to multiple insurance carriers and personalized policy comparisons
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    Lower commission rates
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    Faster claim processing
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    Government-mandated pricing
-                                </div>
+                    <div class="quiz-question active" data-question="1">
+                        <h3>Question 1 of 5</h3>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">What is the main advantage of working with an independent insurance agent?</p>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-answer="correct">
+                                Access to multiple insurance carriers and options
                             </div>
-                            <div class="quiz-progress">
-                                <span>Progress: 1/5</span>
-                                <button class="btn btn-primary" onclick="nextQuestion()" disabled id="next-btn-1">Next →</button>
+                            <div class="quiz-option" data-answer="wrong">
+                                They only work with one insurance company
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                They charge higher fees than online quotes
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                They don't provide personalized service
                             </div>
                         </div>
+                        <div class="quiz-nav">
+                            <button id="next-btn-1" class="btn btn-primary" onclick="nextQuestion()" disabled>Next Question</button>
+                        </div>
+                    </div>
 
-                        <!-- Question 2 -->
-                        <div class="quiz-question" data-question="2">
-                            <h3>Question 2 of 5</h3>
-                            <p><strong>Approximately what percentage of commercial insurance premiums are written through independent agents?</strong></p>
-                            <div class="quiz-options">
-                                <div class="quiz-option" data-answer="wrong">
-                                    25%
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    50%
-                                </div>
-                                <div class="quiz-option" data-answer="correct">
-                                    83%
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    95%
-                                </div>
+                    <div class="quiz-question" data-question="2">
+                        <h3>Question 2 of 5</h3>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Who does an independent insurance agent work for?</p>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-answer="wrong">
+                                The insurance company
                             </div>
-                            <div class="quiz-progress">
-                                <span>Progress: 2/5</span>
-                                <button class="btn btn-primary" onclick="nextQuestion()" disabled id="next-btn-2">Next →</button>
+                            <div class="quiz-option" data-answer="correct">
+                                You, the customer
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                Themselves only
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                The state government
                             </div>
                         </div>
+                        <div class="quiz-nav">
+                            <button id="next-btn-2" class="btn btn-primary" onclick="nextQuestion()" disabled>Next Question</button>
+                        </div>
+                    </div>
 
-                        <!-- Question 3 -->
-                        <div class="quiz-question" data-question="3">
-                            <h3>Question 3 of 5</h3>
-                            <p><strong>What is one of the key benefits of having a local insurance agent familiar with your area?</strong></p>
-                            <div class="quiz-options">
-                                <div class="quiz-option" data-answer="wrong">
-                                    They can waive state requirements
-                                </div>
-                                <div class="quiz-option" data-answer="correct">
-                                    They understand local risks like weather patterns and regional regulations
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    They offer 24/7 automated service
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    They can guarantee the lowest prices
-                                </div>
+                    <div class="quiz-question" data-question="3">
+                        <h3>Question 3 of 5</h3>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">How many insurance carriers can an independent agent typically access?</p>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-answer="wrong">
+                                Only one
                             </div>
-                            <div class="quiz-progress">
-                                <span>Progress: 3/5</span>
-                                <button class="btn btn-primary" onclick="nextQuestion()" disabled id="next-btn-3">Next →</button>
+                            <div class="quiz-option" data-answer="wrong">
+                                Two or three
+                            </div>
+                            <div class="quiz-option" data-answer="correct">
+                                Multiple carriers (often 10+)
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                None - they create their own policies
                             </div>
                         </div>
+                        <div class="quiz-nav">
+                            <button id="next-btn-3" class="btn btn-primary" onclick="nextQuestion()" disabled>Next Question</button>
+                        </div>
+                    </div>
 
-                        <!-- Question 4 -->
-                        <div class="quiz-question" data-question="4">
-                            <h3>Question 4 of 5</h3>
-                            <p><strong>When you work with an independent agent, who pays their commission?</strong></p>
-                            <div class="quiz-options">
-                                <div class="quiz-option" data-answer="wrong">
-                                    The customer pays extra fees
-                                </div>
-                                <div class="quiz-option" data-answer="correct">
-                                    The insurance company pays - no extra cost to the customer
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    The government subsidizes the cost
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    It's split between customer and carrier
-                                </div>
+                    <div class="quiz-question" data-question="4">
+                        <h3>Question 4 of 5</h3>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">What happens to your coverage if you switch carriers with an independent agent?</p>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-answer="wrong">
+                                You need to find a new agent
                             </div>
-                            <div class="quiz-progress">
-                                <span>Progress: 4/5</span>
-                                <button class="btn btn-primary" onclick="nextQuestion()" disabled id="next-btn-4">Next →</button>
+                            <div class="quiz-option" data-answer="correct">
+                                You keep the same agent who handles the transition
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                You lose all your coverage
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                You have to pay double premiums
                             </div>
                         </div>
+                        <div class="quiz-nav">
+                            <button id="next-btn-4" class="btn btn-primary" onclick="nextQuestion()" disabled>Next Question</button>
+                        </div>
+                    </div>
 
-                        <!-- Question 5 -->
-                        <div class="quiz-question" data-question="5">
-                            <h3>Question 5 of 5</h3>
-                            <p><strong>What role does an independent insurance agent play when you need to file a claim?</strong></p>
-                            <div class="quiz-options">
-                                <div class="quiz-option" data-answer="wrong">
-                                    They only provide the phone number for the carrier
-                                </div>
-                                <div class="quiz-option" data-answer="correct">
-                                    They advocate on your behalf and guide you through the entire claims process
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    They personally pay the claim
-                                </div>
-                                <div class="quiz-option" data-answer="wrong">
-                                    They are not involved in the claims process
-                                </div>
+                    <div class="quiz-question" data-question="5">
+                        <h3>Question 5 of 5</h3>
+                        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Does working with an independent agent cost more?</p>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-answer="correct">
+                                No, they're typically paid by the insurance companies
                             </div>
-                            <div class="quiz-progress">
-                                <span>Progress: 5/5</span>
-                                <button class="btn btn-primary" onclick="showResults()" disabled id="next-btn-5">See Results →</button>
+                            <div class="quiz-option" data-answer="wrong">
+                                Yes, they add 20% to your premium
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                Yes, you pay an hourly consulting fee
+                            </div>
+                            <div class="quiz-option" data-answer="wrong">
+                                Yes, but only for home insurance
                             </div>
                         </div>
+                        <div class="quiz-nav">
+                            <button id="next-btn-5" class="btn btn-primary" onclick="showResults()" disabled>See Results</button>
+                        </div>
+                    </div>
 
-                        <!-- Results -->
-                        <div class="quiz-result" id="quiz-result">
-                            <h3>Quiz Complete!</h3>
-                            <p class="quiz-score" id="score">0/5</p>
-                            <p id="result-message"></p>
-                            <button class="btn btn-primary" onclick="restartQuiz()" style="margin-top: 2rem;">Take Quiz Again</button>
-                            <a href="#contact" class="btn btn-secondary" style="margin-top: 1rem;">Get Your Free Quote</a>
+                    <div id="quiz-result">
+                        <h3>Quiz Complete!</h3>
+                        <div id="score"></div>
+                        <p id="result-message"></p>
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                            <button class="btn btn-secondary" onclick="restartQuiz()">Retake Quiz</button>
+                            <a href="#contact" class="btn btn-primary">Get Your Free Quote</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="carriers" id="carriers">
+            <div class="container">
+                <h2 class="section-title">Our Insurance Carriers</h2>
+                <p class="section-subtitle">We partner with top-rated insurance companies to provide you with the best coverage options.</p>
+                
+                <div class="carriers-grid">
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Progressive</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Travelers</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Nationwide</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Liberty Mutual</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Safeco</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">MetLife</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Chubb</div>
+                    </div>
+                    <div class="carrier-card">
+                        <div class="carrier-logo">Hartford</div>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem;">
+                    And many more! Contact us to learn about all our carrier options.
+                </p>
+            </div>
+        </section>
+
         <section class="contact" id="contact">
             <div class="container">
-                <h2 class="section-title" style="color: white;">Get Your Free Quote Today</h2>
-                <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Ready to save on your home and auto insurance? Contact us for a free, no-obligation quote.</p>
+                <h2 class="section-title">Get Your Free Quote Today</h2>
+                <p class="section-subtitle">Ready to save on insurance? Contact us for a free, no-obligation quote.</p>
                 
-                <div class="contact-content">
+                <div class="contact-container">
                     <div class="contact-info">
                         <h3>Contact Information</h3>
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
                             <div>
                                 <strong>Address</strong><br>
-                                634 Eagle Rock Ave. Suite 261<br>
+                                123 Main Street<br>
                                 West Orange, NJ 07052
                             </div>
                         </div>
@@ -976,7 +866,7 @@
                             <span class="contact-icon">📧</span>
                             <div>
                                 <strong>Email</strong><br>
-                                <a href="/cdn-cgi/l/email-protection" class="cfoskey@thecloudins.com" data-cfemail="dfb6b1b9b09fbcb3b0aabbb6b1acaaadbeb1bcbabeb8bab1bca6f1bcb0b2">[email&#160;protected]</a>
+                                cfoskey@thecloudins.com
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1007,7 +897,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="insurance-type">Insurance Type *</label>
-                                <select id="insurance-type" name="insurance-type" required style="width: 100%; padding: 0.8rem; border: none; border-radius: 5px;">
+                                <select id="insurance-type" name="insurance-type" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gray-medium); border-radius: 5px;">
                                     <option value="">Select Insurance Type</option>
                                     <option value="home">Home Insurance</option>
                                     <option value="auto">Auto Insurance</option>
@@ -1030,9 +920,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#home">Home</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
                 <a href="#why-us">Why Choose Us</a>
-                <a href="#services">Services</a>
                 <a href="#carriers">Our Carriers</a>
                 <a href="#contact">Contact</a>
                 <a href="#">Privacy Policy</a>
@@ -1045,7 +935,7 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         let currentQuestion = 1;
         let correctAnswers = 0;
 
