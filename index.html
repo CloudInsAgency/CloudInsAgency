@@ -486,7 +486,8 @@
         }
         
         .form-group input,
-        .form-group textarea {
+        .form-group textarea,
+        .form-group select {
             width: 100%;
             padding: 0.8rem;
             border: none;
@@ -497,6 +498,25 @@
         .form-group textarea {
             resize: vertical;
             min-height: 120px;
+        }
+        
+        .form-message {
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .form-message.success {
+            background-color: #4CAF50;
+            color: white;
+            display: block;
+        }
+        
+        .form-message.error {
+            background-color: #f44336;
+            color: white;
+            display: block;
         }
         
         /* Footer */
@@ -1006,12 +1026,8 @@
                     
                     <div class="contact-form">
                         <h3>Request a Free Quote</h3>
-                        <form id="contact-form" action="https://formsubmit.co/cfoskey@thecloudins.com" method="POST">
-                            <!-- FormSubmit Configuration -->
-                            <input type="hidden" name="_subject" value="New Quote Request from Cloud Insurance Website">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-                            
+                        <div id="form-messages" class="form-message"></div>
+                        <form id="contact-form">
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
                                 <input type="text" id="name" name="name" required>
@@ -1026,7 +1042,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="insurance-type">Insurance Type *</label>
-                                <select id="insurance-type" name="insurance_type" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gray-medium); border-radius: 5px;">
+                                <select id="insurance-type" name="insurance_type" required>
                                     <option value="">Select Insurance Type</option>
                                     <option value="Home Insurance">Home Insurance</option>
                                     <option value="Auto Insurance">Auto Insurance</option>
@@ -1158,6 +1174,52 @@
             // Show first question
             document.querySelector('.quiz-question[data-question="1"]').classList.add('active');
         }
+
+        // Contact Form Submission with AJAX
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessages = document.getElementById('form-messages');
+            const formData = new FormData(this);
+            const submitButton = this.querySelector('button[type="submit"]');
+            
+            // Disable submit button
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            // Send form data via AJAX
+            fetch('process-form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Show success message
+                formMessages.textContent = data;
+                formMessages.className = 'form-message success';
+                
+                // Reset form
+                document.getElementById('contact-form').reset();
+                
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Get Free Quote';
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessages.className = 'form-message';
+                }, 5000);
+            })
+            .catch(error => {
+                // Show error message
+                formMessages.textContent = 'Oops! Something went wrong. Please try calling us at (973) 449-3671.';
+                formMessages.className = 'form-message error';
+                
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Get Free Quote';
+            });
+        });
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
