@@ -1006,7 +1006,12 @@
                     
                     <div class="contact-form">
                         <h3>Request a Free Quote</h3>
-                        <form id="contact-form" onsubmit="handleSubmit(event)">
+                        <form id="contact-form" action="https://formsubmit.co/cfoskey@thecloudins.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Quote Request from Cloud Insurance Website">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
                                 <input type="text" id="name" name="name" required>
@@ -1021,12 +1026,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="insurance-type">Insurance Type *</label>
-                                <select id="insurance-type" name="insurance-type" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gray-medium); border-radius: 5px;">
+                                <select id="insurance-type" name="insurance_type" required style="width: 100%; padding: 0.8rem; border: 1px solid var(--gray-medium); border-radius: 5px;">
                                     <option value="">Select Insurance Type</option>
-                                    <option value="home">Home Insurance</option>
-                                    <option value="auto">Auto Insurance</option>
-                                    <option value="both">Home & Auto Bundle</option>
-                                    <option value="other">Other</option>
+                                    <option value="Home Insurance">Home Insurance</option>
+                                    <option value="Auto Insurance">Auto Insurance</option>
+                                    <option value="Home & Auto Bundle">Home & Auto Bundle</option>
+                                    <option value="Other">Other</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -1152,40 +1157,6 @@
             
             // Show first question
             document.querySelector('.quiz-question[data-question="1"]').classList.add('active');
-        }
-
-        // Form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(event.target);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            const insuranceType = formData.get('insurance-type');
-            const message = formData.get('message');
-            
-            // Create email body
-            const emailBody = `New Quote Request from Cloud Insurance Website
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Insurance Type: ${insuranceType}
-Additional Information: ${message}`;
-            
-            // Create mailto link
-            const mailtoLink = `mailto:cfoskey@thecloudins.com?subject=New Quote Request from ${encodeURIComponent(name)}&body=${encodeURIComponent(emailBody)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            alert('Thank you for your interest! We will contact you shortly with your free quote.');
-            
-            // Reset form
-            event.target.reset();
         }
 
         // Smooth scrolling for navigation links
