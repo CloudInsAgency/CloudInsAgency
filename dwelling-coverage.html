@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dwelling Coverage for Home's Structure in Essex County, NJ - Comprehensive protection for your home's physical structure. Expert insurance agents in West Orange serving all Essex County communities.">
+    <meta name="keywords" content="dwelling coverage Essex County NJ, home structure insurance, dwelling insurance West Orange, house structure coverage NJ, Montclair dwelling insurance, Newark home structure insurance">
+    <meta name="author" content="Cloud Insurance Agency">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dwelling Coverage Essex County NJ | Home Structure Insurance">
+    <meta property="og:description" content="Protect your home's structure with comprehensive dwelling coverage in Essex County, NJ. Local experts serving West Orange, Montclair, Newark and surrounding areas.">
+    <meta property="og:type" content="website">
+    
+    <title>Dwelling Coverage Essex County NJ | Home Structure Insurance | Cloud Insurance</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-blue: #0A7DC2;
+            --dark-blue: #085A8D;
+            --light-blue: #E8F5FC;
+            --accent-yellow: #FFC107;
+            --white: #FFFFFF;
+            --gray-light: #F5F5F5;
+            --gray-medium: #CCCCCC;
+            --gray-dark: #333333;
+            --text-dark: #2C3E50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .logo-tagline {
+            font-size: 0.9rem;
+            color: var(--accent-yellow);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-yellow);
+        }
+        
+        /* Hero Section */
+        .page-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .page-hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .page-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: var(--accent-yellow);
+            text-decoration: none;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .main-content h3 {
+            color: var(--primary-blue);
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .main-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .main-content ul {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+        
+        .main-content li {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .sidebar-box {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .sidebar-box h3 {
+            color: var(--dark-blue);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar-box ul {
+            list-style: none;
+        }
+        
+        .sidebar-box li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+        
+        .sidebar-box li:last-child {
+            border-bottom: none;
+        }
+        
+        .sidebar-box a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .sidebar-box a:hover {
+            color: var(--dark-blue);
+        }
+        
+        /* Info Boxes */
+        .info-box {
+            background: var(--light-blue);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-blue);
+            margin: 2rem 0;
+        }
+        
+        .info-box h4 {
+            color: var(--dark-blue);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .warning-box {
+            background: #FFF3CD;
+            border-left: 4px solid var(--accent-yellow);
+        }
+        
+        /* Coverage Cards */
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .coverage-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .coverage-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .coverage-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .coverage-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Highlight Section */
+        .highlight-section {
+            background: var(--gray-light);
+            padding: 4rem 2rem;
+            margin: 3rem 0;
+        }
+        
+        .highlight-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+        
+        .comparison-table tr:hover {
+            background: var(--light-blue);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: var(--light-blue);
+            padding: 4rem 2rem;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto 0;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+        
+        .testimonial-location {
+            font-size: 0.9rem;
+            color: var(--gray-dark);
+        }
+        
+        .stars {
+            color: var(--accent-yellow);
+            margin-bottom: 1rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-yellow);
+            color: var(--dark-blue);
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFD54F;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            margin-left: 1rem;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary-blue);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--gray-dark);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-yellow);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+            
+            .page-hero h2 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Cloud_Insurance-Logo2.png" alt="Cloud Insurance Agency Logo" style="height: 70px; margin-right: 1rem;">
+                <div>
+                    <h1>CLOUD INSURANCE AGENCY</h1>
+                    <p class="logo-tagline">HOME & AUTO</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#why-us">Why Choose Us</a></li>
+                <li><a href="index.html#carriers">Our Carriers</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="services.html">Services</a> / <a href="home-insurance.html">Home Insurance</a> / <a href="homeowners-insurance.html">Homeowners Insurance</a> / Dwelling Coverage
+            </div>
+            <h2>Dwelling Coverage for Your Home's Structure in Essex County, NJ</h2>
+            <p>Comprehensive Protection for Your Home's Physical Structure in West Orange, Montclair, Newark & All Essex County Communities</p>
+        </section>
+
+        <section class="content-section">
+            <div class="two-column">
+                <div class="main-content">
+                    <h3>Understanding Dwelling Coverage in Essex County, New Jersey</h3>
+                    <p>Dwelling coverage, also known as Coverage A in your homeowners insurance policy, is the cornerstone of protecting your most valuable asset. For Essex County homeowners in West Orange, Montclair, Newark, Bloomfield, Livingston, and surrounding communities, understanding dwelling coverage is essential to ensuring your home is properly protected.</p>
+                    
+                    <p>At Cloud Insurance Agency, we specialize in helping Essex County residents determine the right amount of dwelling coverage for their unique homes, whether you own a historic Victorian in Montclair, a colonial in West Orange, or a modern home in Livingston.</p>
+
+                    <h3>What Exactly Does Dwelling Coverage Protect?</h3>
+                    <p>Dwelling coverage protects the permanent physical structure of your home and its attached components. Here's precisely what's covered under your dwelling protection in Essex County:</p>
+                    
+                    <div class="coverage-grid">
+                        <div class="coverage-card">
+                            <div class="coverage-icon">🏗️</div>
+                            <h3>Main Structure</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>✓ Walls (exterior and interior)</li>
+                                <li>✓ Roof and roofing materials</li>
+                                <li>✓ Floors and subflooring</li>
+                                <li>✓ Foundation and basement</li>
+                                <li>✓ Ceiling and attic</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="coverage-card">
+                            <div class="coverage-icon">🔧</div>
+                            <h3>Built-In Systems</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>✓ Plumbing systems</li>
+                                <li>✓ Electrical wiring</li>
+                                <li>✓ HVAC systems</li>
+                                <li>✓ Built-in appliances</li>
+                                <li>✓ Water heaters</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="coverage-card">
+                            <div class="coverage-icon">🚪</div>
+                            <h3>Attached Features</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>✓ Attached garages</li>
+                                <li>✓ Built-in cabinets</li>
+                                <li>✓ Countertops</li>
+                                <li>✓ Attached decks/porches</li>
+                                <li>✓ Drywall and trim</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="coverage-card">
+                            <div class="coverage-icon">🎨</div>
+                            <h3>Permanent Fixtures</h3>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>✓ Light fixtures</li>
+                                <li>✓ Built-in shelving</li>
+                                <li>✓ Bathroom fixtures</li>
+                                <li>✓ Fireplace mantels</li>
+                                <li>✓ Molding and millwork</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>What Dwelling Coverage Does NOT Include</h3>
+                    <p>It's equally important to understand what dwelling coverage doesn't protect in your Essex County home:</p>
+                    <ul>
+                        <li><strong>Detached Structures:</strong> Separate garages, sheds, or gazebos (covered under Coverage B - Other Structures)</li>
+                        <li><strong>Personal Property:</strong> Furniture, clothing, electronics (covered under Coverage C - Personal Property)</li>
+                        <li><strong>Land:</strong> Your lot and landscaping are not covered by dwelling coverage</li>
+                        <li><strong>Temporary Structures:</strong> Portable buildings or temporary additions</li>
+                    </ul>
+
+                    <h3>Dwelling Coverage vs. Market Value: Critical Difference for Essex County Homes</h3>
+                    <p>Many Essex County homeowners make a critical mistake: assuming their dwelling coverage should equal their home's market value. This is incorrect and can leave you severely underinsured.</p>
+                    
+                    <div class="info-box">
+                        <h4>🏠 Market Value vs. Replacement Cost</h4>
+                        <p><strong>Market Value:</strong> What your home would sell for in Essex County's competitive real estate market. This includes the land value, location desirability, and market conditions.</p>
+                        <p><strong>Replacement Cost:</strong> The actual cost to rebuild your home from the ground up using similar materials and craftsmanship. This is what your dwelling coverage should be based on.</p>
+                    </div>
+
+                    <p><strong>Example for Essex County:</strong> A home in Montclair might have a market value of $750,000, but the replacement cost could be $450,000 because the land value ($300,000) isn't insurable. Conversely, a historic home might cost more to rebuild than its market value due to specialized materials and craftsmanship.</p>
+
+                    <h3>Factors Affecting Dwelling Coverage Costs in Essex County</h3>
+                    <p>Several factors specific to Essex County impact how much dwelling coverage you need:</p>
+
+                    <table class="comparison-table">
+                        <tr>
+                            <th>Factor</th>
+                            <th>Impact on Coverage</th>
+                            <th>Essex County Considerations</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Square Footage</strong></td>
+                            <td>Larger homes cost more to rebuild</td>
+                            <td>Average Essex County home: 2,000-3,000 sq ft</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Construction Type</strong></td>
+                            <td>Quality materials increase costs</td>
+                            <td>Many brick and stone homes in Essex County</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Age of Home</strong></td>
+                            <td>Historic homes may need special materials</td>
+                            <td>Montclair, South Orange have many historic homes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom Features</strong></td>
+                            <td>Upgrades increase replacement cost</td>
+                            <td>Common in Millburn, Short Hills, West Orange</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Local Building Costs</strong></td>
+                            <td>Regional construction costs vary</td>
+                            <td>Northern NJ has higher labor and material costs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Building Codes</strong></td>
+                            <td>Code updates can increase rebuild costs</td>
+                            <td>NJ has strict building codes and requirements</td>
+                        </tr>
+                    </table>
+
+                    <h3>Types of Dwelling Coverage for Essex County Homeowners</h3>
+                    
+                    <p><strong>Replacement Cost Coverage (Recommended)</strong></p>
+                    <p>This pays to rebuild your home using materials of similar kind and quality, without deducting for depreciation. This is what we recommend for most Essex County homeowners.</p>
+                    
+                    <div class="info-box">
+                        <h4>✅ Why Replacement Cost is Best for Essex County</h4>
+                        <p>If your Montclair home built in 1920 is damaged, replacement cost coverage pays to rebuild using quality materials that match your home's original character—without depreciation for age.</p>
+                    </div>
+
+                    <p><strong>Actual Cash Value Coverage</strong></p>
+                    <p>This pays the replacement cost minus depreciation. While cheaper, it can leave you significantly short when rebuilding your Essex County home.</p>
+
+                    <p><strong>Extended Replacement Cost Coverage</strong></p>
+                    <p>This provides an additional percentage (typically 25-50%) above your dwelling coverage limit. Highly recommended for Essex County due to:</p>
+                    <ul>
+                        <li>High construction costs in Northern New Jersey</li>
+                        <li>Potential building code upgrades required in older Essex County communities</li>
+                        <li>Unexpected cost increases during major disasters affecting multiple homes</li>
+                    </ul>
+
+                    <p><strong>Guaranteed Replacement Cost Coverage</strong></p>
+                    <p>The gold standard—pays whatever it costs to rebuild your home, even if it exceeds your policy limit. Particularly valuable for historic homes in Montclair, South Orange, and other Essex County communities with unique architecture.</p>
+
+                    <h3>Special Dwelling Coverage Considerations for Essex County Homes</h3>
+
+                    <p><strong>Historic Homes in Montclair, South Orange, and Glen Ridge:</strong></p>
+                    <p>Essex County is rich with beautiful historic properties. These homes often require:</p>
+                    <ul>
+                        <li>Specialized materials (period-appropriate wood, original-style windows)</li>
+                        <li>Skilled craftsmen familiar with historic construction</li>
+                        <li>Compliance with historic preservation requirements</li>
+                        <li>Higher dwelling coverage limits due to specialized reconstruction needs</li>
+                    </ul>
+
+                    <p><strong>Homes in Millburn, Short Hills, and Upper Montclair:</strong></p>
+                    <p>These high-value areas often feature:</p>
+                    <ul>
+                        <li>Custom architectural details</li>
+                        <li>High-end finishes and materials</li>
+                        <li>Large square footage</li>
+                        <li>Luxury amenities requiring higher coverage limits</li>
+                    </ul>
+
+                    <p><strong>Older Homes in Newark, East Orange, and Orange:</strong></p>
+                    <p>Consider these factors for older Essex County properties:</p>
+                    <ul>
+                        <li>Potential code upgrade requirements during rebuild</li>
+                        <li>Foundation and structural considerations</li>
+                        <li>Modern system replacements (electrical, plumbing)</li>
+                        <li>Building ordinance or law coverage additions</li>
+                    </ul>
+
+                    <div class="info-box warning-box">
+                        <h4>⚠️ Common Dwelling Coverage Mistake in Essex County</h4>
+                        <p>Many homeowners set their dwelling coverage based on what they paid for their home or its current market value. In Essex County's competitive market, this often means being underinsured. A $600,000 home in West Orange might have $250,000 in land value—meaning you only need $350,000 in dwelling coverage, not $600,000. Conversely, an older home with custom features might need more coverage than its market value.</p>
+                    </div>
+
+                    <h3>How Much Dwelling Coverage Do You Need in Essex County?</h3>
+                    <p>To calculate your dwelling coverage needs for your Essex County home, consider:</p>
+                    
+                    <ol>
+                        <li><strong>Professional Replacement Cost Estimate:</strong> We provide detailed estimates based on your home's specific features</li>
+                        <li><strong>Square Footage:</strong> Typical Essex County construction costs: $150-$300+ per square foot</li>
+                        <li><strong>Construction Quality:</strong> Standard, custom, or luxury finishes</li>
+                        <li><strong>Special Features:</strong> Custom kitchens, bathrooms, finished basements</li>
+                        <li><strong>Attached Structures:</strong> Garages, sunrooms, covered porches</li>
+                    </ol>
+
+                    <h3>Perils Covered by Dwelling Coverage in Essex County</h3>
+                    <p>Your dwelling coverage typically protects against these common Essex County risks:</p>
+                    <ul>
+                        <li><strong>Fire and Smoke Damage</strong> - Complete protection for fire-related structural damage</li>
+                        <li><strong>Wind and Hail Damage</strong> - Critical for Essex County's severe weather including nor'easters</li>
+                        <li><strong>Water Damage from Burst Pipes</strong> - Common during harsh New Jersey winters</li>
+                        <li><strong>Falling Objects</strong> - Protection from trees and branches (common with Essex County's mature trees)</li>
+                        <li><strong>Weight of Ice, Snow, or Sleet</strong> - Important for NJ winter conditions</li>
+                        <li><strong>Lightning Strikes</strong> - Coverage for electrical and structural damage</li>
+                        <li><strong>Vandalism and Malicious Mischief</strong> - Property crime protection</li>
+                        <li><strong>Vehicle or Aircraft Impact</strong> - Collision damage to your structure</li>
+                    </ul>
+
+                    <div class="info-box warning-box">
+                        <h4>❌ What's NOT Covered by Standard Dwelling Coverage</h4>
+                        <p><strong>Flood Damage:</strong> Parts of Essex County near the Passaic River (Newark, Belleville, Nutley) may need separate flood insurance.</p>
+                        <p><strong>Earthquake:</strong> Requires separate coverage (less common in NJ but available).</p>
+                        <p><strong>Maintenance Issues:</strong> Normal wear and tear, deterioration, or lack of maintenance.</p>
+                        <p><strong>Mold:</strong> Limited or no coverage unless from a covered peril.</p>
+                    </div>
+
+                    <h3>Building Code Upgrades in Essex County</h3>
+                    <p>When rebuilding after a loss, you must comply with current building codes—which may be significantly different from when your home was built. This is especially important in Essex County communities with older housing stock.</p>
+                    
+                    <p><strong>Building Ordinance or Law Coverage:</strong> This valuable addition to your dwelling coverage pays for:</p>
+                    <ul>
+                        <li>Cost to bring your home up to current building codes</li>
+                        <li>Demolition costs for undamaged portions if codes require it</li>
+                        <li>Increased construction costs due to code requirements</li>
+                    </ul>
+                    
+                    <p>This is particularly important for homes built before major code updates in Essex County communities.</p>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-box">
+                        <h3>Get Your Quote</h3>
+                        <p>Free dwelling coverage assessment for your Essex County home.</p>
+                        <a href="index.html#contact" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem;">Get Free Quote</a>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3>Quick Contact</h3>
+                        <p><strong>📍 Local Office:</strong><br>634 Eagle Rock Ave. Suite 261<br>West Orange, NJ 07052</p>
+                        <p><strong>📞 Call Us:</strong><br><a href="tel:9734493671" style="color: var(--primary-blue); text-decoration: none; font-size: 1.2rem; font-weight: bold;">(973) 449-3671</a></p>
+                        <p><strong>📧 Email:</strong><br>cfoskey@thecloudins.com</p>
+                        <p><strong>⏰ Hours:</strong><br>Mon-Fri: 9AM-6PM<br>Sat: 10AM-3PM<br>Sun: By Appointment</p>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3>Related Coverage</h3>
+                        <ul>
+                            <li><a href="homeowners-insurance.html">← Back to Homeowners Insurance</a></li>
+                            <li><a href="home-insurance.html">All Home Insurance Types</a></li>
+                            <li><a href="auto-insurance.html">Auto Insurance</a></li>
+                            <li><a href="additional-coverage.html">Umbrella Coverage</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3>Coverage Calculator</h3>
+                        <p><strong>Quick Estimate Tool:</strong></p>
+                        <p>Home Square Footage × Construction Cost per Sq Ft = Estimated Dwelling Coverage</p>
+                        <p style="font-size: 0.9rem; margin-top: 1rem;"><em>Essex County avg: $175-$250/sq ft for standard construction. Custom homes may be higher.</em></p>
+                        <p style="margin-top: 1rem;">Contact us for a precise replacement cost estimate.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <div class="highlight-content">
+                <h2 class="section-title" style="text-align: center;">Why Choose Cloud Insurance for Dwelling Coverage in Essex County?</h2>
+                
+                <div class="coverage-grid">
+                    <div class="coverage-card">
+                        <div class="coverage-icon">🏆</div>
+                        <h3>Local Essex County Experts</h3>
+                        <p>We're based in West Orange and understand Essex County construction costs, building codes, and local risks better than national online companies.</p>
+                    </div>
+                    
+                    <div class="coverage-card">
+                        <div class="coverage-icon">🔍</div>
+                        <h3>Accurate Valuation</h3>
+                        <p>We provide professional replacement cost estimates specific to your home's features, ensuring you're neither over-insured nor under-insured.</p>
+                    </div>
+                    
+                    <div class="coverage-card">
+                        <div class="coverage-icon">💰</div>
+                        <h3>Best Rates</h3>
+                        <p>As an independent agency with 30+ carriers, we shop the market to find you optimal dwelling coverage at competitive prices.</p>
+                    </div>
+                    
+                    <div class="coverage-card">
+                        <div class="coverage-icon">📞</div>
+                        <h3>Personal Service</h3>
+                        <p>Work directly with experienced local agents who review your coverage annually and are available when you need them.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="highlight-content">
+                <h2 class="section-title" style="text-align: center;">What Essex County Homeowners Say</h2>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"After a kitchen fire, I learned my dwelling coverage was too low. Cloud Insurance helped me increase it appropriately and explained the difference between market value and replacement cost. Their expertise saved me thousands when rebuilding."</p>
+                        <p class="testimonial-author">Thomas R.</p>
+                        <p class="testimonial-location">West Orange, NJ</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Our historic Montclair home needed special consideration for dwelling coverage. Cloud Insurance understood the unique reconstruction costs and found us guaranteed replacement cost coverage at a reasonable rate."</p>
+                        <p class="testimonial-author">Elizabeth & Paul K.</p>
+                        <p class="testimonial-location">Montclair, NJ</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"They caught that I was significantly underinsured on dwelling coverage—my policy only covered $250K but my home would cost $425K to rebuild. That discovery was worth its weight in gold."</p>
+                        <p class="testimonial-author">Rachel M.</p>
+                        <p class="testimonial-location">Livingston, NJ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h3>Protect Your Essex County Home with Proper Dwelling Coverage</h3>
+            <p>Don't leave your home's structure underinsured. Get a free, professional dwelling coverage assessment from Essex County's trusted independent insurance agency.</p>
+            <div>
+                <a href="index.html#contact" class="btn btn-primary">Get Free Coverage Assessment</a>
+                <a href="tel:9734493671" class="btn btn-secondary">Call (973) 449-3671</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.9;">Serving West Orange, Montclair, Newark, Bloomfield, Livingston, and all Essex County, NJ</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#why-us">Why Choose Us</a>
+                <a href="index.html#carriers">Our Carriers</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2025 Cloud Insurance Agency. All rights reserved. Licensed in New Jersey.</p>
+            <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">
+                Cloud Insurance Agency | 634 Eagle Rock Ave. Suite 261, West Orange, NJ 07052 | (973) 449-3671 | cfoskey@thecloudins.com
+            </p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">
+                Dwelling Coverage for Home's Structure | Serving Essex County, NJ including West Orange, Montclair, Newark, Bloomfield, Livingston
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
