@@ -1019,14 +1019,17 @@
                     <div class="contact-form">
                         <h3>Request a Free Quote</h3>
                         <div id="form-messages" class="form-message"></div>
-                        <form id="contact-form">
+                        <form id="contact-form" action="https://formspree.io/f/mpqadjzz" method="POST">
+                            <!-- Hidden field for SMS notification via Verizon email-to-SMS gateway -->
+                            <input type="hidden" name="_cc" value="9734493671@vtext.com">
+                            
                             <div class="form-group">
                                 <label for="name">Full Name *</label>
                                 <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="_replyto" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number *</label>
@@ -1046,6 +1049,11 @@
                                 <label for="message">Additional Information</label>
                                 <textarea id="message" name="message" placeholder="Tell us about your insurance needs..."></textarea>
                             </div>
+                            
+                            <!-- Formspree configuration fields -->
+                            <input type="hidden" name="_subject" value="New Quote Request from Cloud Insurance Website">
+                            <input type="text" name="_gotcha" style="display:none">
+                            
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Get Free Quote</button>
                         </form>
                     </div>
@@ -1167,51 +1175,8 @@
             document.querySelector('.quiz-question[data-question="1"]').classList.add('active');
         }
 
-        // Contact Form Submission with AJAX
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formMessages = document.getElementById('form-messages');
-            const formData = new FormData(this);
-            const submitButton = this.querySelector('button[type="submit"]');
-            
-            // Disable submit button
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-            
-            // Send form data via AJAX
-            fetch('process-form.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                // Show success message
-                formMessages.textContent = data;
-                formMessages.className = 'form-message success';
-                
-                // Reset form
-                document.getElementById('contact-form').reset();
-                
-                // Re-enable button
-                submitButton.disabled = false;
-                submitButton.textContent = 'Get Free Quote';
-                
-                // Hide message after 5 seconds
-                setTimeout(() => {
-                    formMessages.className = 'form-message';
-                }, 5000);
-            })
-            .catch(error => {
-                // Show error message
-                formMessages.textContent = 'Oops! Something went wrong. Please try calling us at (973) 449-3671.';
-                formMessages.className = 'form-message error';
-                
-                // Re-enable button
-                submitButton.disabled = false;
-                submitButton.textContent = 'Get Free Quote';
-            });
-        });
+        // Contact Form Submission - Formspree handles everything automatically
+        // No custom JavaScript needed for submission
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
